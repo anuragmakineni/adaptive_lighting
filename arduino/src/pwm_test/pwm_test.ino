@@ -6,8 +6,8 @@ int PWM_val = 0;
 
 void setup() {
   pinMode(output_pin, OUTPUT);
-  Serial.begin(9600);
-
+  Serial.begin(115200);
+  Serial.setTimeout(10);
 }
 
 void loop() {
@@ -16,8 +16,8 @@ void loop() {
   if(Serial.available() > 0)
   {
     PWM_val = Serial.parseInt();
-    Serial.print("PWM: ");
-    Serial.println(PWM_val, DEC);  
+    PWM_val = constrain(PWM_val, 0, 255);
+//    Serial.print("PWM: ");
+//    Serial.println(PWM_val, DEC);  
   }
-  
 }
