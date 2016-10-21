@@ -12,7 +12,7 @@ class pwm_driver(object):
         self.status_sub = rospy.Subscriber("~pwm", Float64, self.pwm_cb)
 
         self.port = rospy.get_param('~port', '/dev/ttyUSB0')
-        self.baudrate = rospy.get_param('~baudrate', 9600)
+        self.baudrate = rospy.get_param('~baudrate', 115200)
         self.t_out = rospy.get_param('~timeout', 0.05)
         self.initialized = False
 
