@@ -16,11 +16,13 @@ class pwm_driver(object):
         self.t_out = rospy.get_param('~timeout', 0.05)
         self.initialized = False
 
+        self.output = "0";
 
         try:
             self.s = serial.Serial(self.port, self.baudrate,
                                    timeout=self.t_out)
             self.initialized = True
+            self.s.write(self.output.encode())
         except serial.SerialException:
             rospy.logerr("Serial Exception!")
 
@@ -31,7 +33,6 @@ class pwm_driver(object):
             control_val = int(round(control_val, 0))
 
             self.output = str(control_val)
-            print(self.output)
             self.s.write(self.output.encode())
 
 if __name__ == '__main__':
