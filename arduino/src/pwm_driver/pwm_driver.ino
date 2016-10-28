@@ -28,18 +28,29 @@ void loop() {
   
   while (Serial.available())
   { 
-    int a = Serial.parseInt();
-    int b = Serial.parseInt();
-    int c = Serial.parseInt();
-    int d = Serial.parseInt();
-   
-    if (Serial.read() == '\n')
-   {
-     PWM_A = constrain(a, 0, 255);
-     PWM_B = constrain(b, 0, 255);
-     PWM_C = constrain(c, 0, 255);
-     PWM_D = constrain(d, 0, 255);
-   }
-   
+    if (Serial.find("A"))
+    {
+      int val = Serial.parseInt();
+      PWM_A = constrain(val, 0, 255);
+    }
+    else break;
+    if (Serial.find("B"))
+    {
+      int val = Serial.parseInt();
+      PWM_B = constrain(val, 0, 255);
+    }
+    else break;
+    if (Serial.find("C"))
+    {
+      int val = Serial.parseInt();
+      PWM_C = constrain(val, 0, 255);
+    }
+    else break;
+    if (Serial.find("D"))
+    {
+      int val = Serial.parseInt();
+      PWM_D = constrain(val, 0, 255);
+    }
+    else break;
   }
 }
