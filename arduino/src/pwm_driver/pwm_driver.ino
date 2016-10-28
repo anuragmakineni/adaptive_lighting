@@ -17,7 +17,5 @@ void loop() {
   {
     PWM_val = Serial.parseInt();
     PWM_val = constrain(PWM_val, 0, 255);
-//    Serial.print("PWM: ");
-//    Serial.println(PWM_val, DEC);  
   }
 }
