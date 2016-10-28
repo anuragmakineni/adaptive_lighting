@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 import rospy
-from std_msgs.msg import Float64
+from std_msgs.msg import Float64MultiArray
+import numpy as np
 import serial
 import string
 import time
@@ -9,7 +10,7 @@ import time
 class pwm_driver(object):
     def __init__(self):
         self.initialized = False
-        self.status_sub = rospy.Subscriber("~pwm", Float64, self.pwm_cb)
+        self.status_sub = rospy.Subscriber("~pwm", Float64MultiArray, self.pwm_cb)
 
         self.port = rospy.get_param('~port', '/dev/ttyUSB0')
         self.baudrate = rospy.get_param('~baudrate', 115200)
@@ -28,11 +29,23 @@ class pwm_driver(object):
 
     def pwm_cb(self, msg):
         if self.initialized and self.s.isOpen():
-            pwm = msg.data
-            control_val = float(pwm) * 255
-            control_val = int(round(control_val, 0))
+            pwms = np.array(msg.data)
+            pwms = np.clip(pwms, 0.0, 1.0)
 
-            self.output = str(control_val)
+            pwm_a = float(pwms[0]) * 255
+            pwm_a = int(round(pwm_a, 0))
+
+            pwm_b = float(pwms[1]) * 255
+            pwm_b = int(round(pwm_b, 0))
+
+            pwm_c = float(pwms[2]) * 255
+            pwm_c = int(round(pwm_c, 0))
+
+            pwm_d = float(pwms[3]) * 255
+            pwm_d = int(round(pwm_d, 0))
+
+            self.output = "A"+str(pwm_a)+"B" + str(pwm_b) + "C" + str(pwm_c) + "D" + str(pwm_d)
+            print(self.output)
             self.s.write(self.output.encode())
 
 if __name__ == '__main__':
