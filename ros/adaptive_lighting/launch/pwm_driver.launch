@@ -1,0 +1,3 @@
+<launch>
+<node name="light_driver" pkg="adaptive_lighting" type="light_driver.py" ns="adaptive_lighting" output="screen"/>
+</launch>
