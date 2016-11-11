@@ -1,0 +1,5 @@
+<launch>
+<node name="light_plotter" pkg="adaptive_lighting" type="light_plotter.py" ns="adaptive_lighting" output="screen">
+  <remap from="~image_raw" to="/pg_16369091/image_raw"/>
+</node>
+</launch>
