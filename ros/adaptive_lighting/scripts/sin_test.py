@@ -8,7 +8,7 @@ rospy.init_node('sin_test')
 
 t = 0.0
 intensity = 1.0;
-rate = 100.0
+rate = 200.0
 r = rospy.Rate(rate)
 
 while not rospy.is_shutdown():

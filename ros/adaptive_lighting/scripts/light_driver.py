@@ -46,7 +46,6 @@ class pwm_driver(object):
 
 
             self.output = "A"+str(pwm_a).zfill(3)+"B" + str(pwm_b).zfill(3) + "C" + str(pwm_c).zfill(3) + "D" + str(pwm_d).zfill(3) + "\n"
-            print(self.output)
             self.s.write(self.output.encode())
 
 if __name__ == '__main__':
