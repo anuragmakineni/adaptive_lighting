@@ -54,6 +54,4 @@ void parseCommand(String com)
   analogWrite(PIN_B, PWM_B);
   analogWrite(PIN_C, PWM_C);
   analogWrite(PIN_D, PWM_D);
-  
-  Serial.print(PWM_D);
 }
