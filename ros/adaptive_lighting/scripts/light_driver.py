@@ -44,7 +44,8 @@ class pwm_driver(object):
             pwm_d = float(pwms[3]) * 255
             pwm_d = int(round(pwm_d, 0))
 
-            self.output = "A"+str(pwm_a)+"B" + str(pwm_b) + "C" + str(pwm_c) + "D" + str(pwm_d)
+
+            self.output = "A"+str(pwm_a).zfill(3)+"B" + str(pwm_b).zfill(3) + "C" + str(pwm_c).zfill(3) + "D" + str(pwm_d).zfill(3) + "\n"
             print(self.output)
             self.s.write(self.output.encode())
 
