@@ -1,0 +1,6 @@
+<launch>
+<node name="linear_controller" pkg="adaptive_lighting" type="linear_controller.py" ns="adaptive_lighting" output="screen">
+  <remap from="~image_raw" to="/pg_16369091/image_raw"/>
+  <remap from="~pwm" to="light_driver/pwm"/>
+</node>
+</launch>
