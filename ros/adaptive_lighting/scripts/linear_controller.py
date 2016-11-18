@@ -25,13 +25,21 @@ class linear_controller(object):
         self.image_height = rospy.get_param("image_height", 1536)
         self.cropped_width = rospy.get_param("cropped_width", 500)
         self.cropped_height = rospy.get_param("cropped_height", self.image_height)
-        self.n_leds = rospy.get_param("n_leds", 2)
+        self.led_a = rospy.get_param("led_a", 1)
+        self.led_b = rospy.get_param("led_a", 1)
+        self.led_c = rospy.get_param("led_a", 0)
+        self.led_d = rospy.get_param("led_a", 0)
+        self.n_leds = self.led_a + self.led_b + self.led_c + self.led_d
 
-        # LED Map
-        self.led_a = [0, 0, 0, 0]
-        self.led_b = [0, 0, 0, 0]
-        self.led_c = [0, 0, 1, 0]
-        self.led_d = [0, 0, 0, 1]
+        self.led_array = []
+        if self.led_a == 1:
+            self.led_array.append(0)
+        if self.led_b == 1:
+            self.led_array.append(1)
+        if self.led_c == 1:
+            self.led_array.append(2)
+        if self.led_d == 1:
+            self.led_array.append(3)
 
         # Current State of LED's
         self.initialized = False
@@ -54,13 +62,21 @@ class linear_controller(object):
     def update_leds(self, level):
         b = level.data * np.ones([self.cropped_height * self.cropped_width, 1])
 
+        # solve least squares
         if self.A_initialized:
             sol = np.linalg.lstsq(self.A, b)
             x = sol[0]
             print(x)
-        msg = Float64MultiArray()
-        msg.data = self.control
-        self.led_pub.publish(msg)
+
+            # update led control
+            self.control = np.array([0.0, 0.0, 0.0, 0.0])
+            for i in range(len(x)):
+                self.control[self.led_array[i]] = x[i]
+
+            # publish control
+            msg = Float64MultiArray()
+            msg.data = self.control
+            self.led_pub.publish(msg)
 
     def led_cb(self, msg):
         self.current_state = np.array(msg.data)
@@ -79,9 +95,9 @@ class linear_controller(object):
         image_horz_center = int(self.image_width / 2.0)
         image_vert_center = int(self.image_height / 2.0)
 
-        v= v[image_vert_center - int(self.cropped_height / 2.0):image_vert_center + int(
+        v = v[image_vert_center - int(self.cropped_height / 2.0):image_vert_center + int(
             self.cropped_height / 2.0),
-                   image_horz_center - int(self.cropped_width / 2.0):image_horz_center + int(self.cropped_width / 2.0)]
+            image_horz_center - int(self.cropped_width / 2.0):image_horz_center + int(self.cropped_width / 2.0)]
 
         self.last_frame = np.array(v)
 
