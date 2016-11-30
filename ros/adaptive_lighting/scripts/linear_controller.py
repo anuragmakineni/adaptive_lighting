@@ -7,6 +7,7 @@ from std_msgs.msg import Float64MultiArray, UInt8
 from std_srvs.srv import Trigger, TriggerResponse
 from cv_bridge import CvBridge, CvBridgeError
 import numpy as np
+from scipy import optimize
 
 
 class linear_controller(object):
@@ -26,11 +27,12 @@ class linear_controller(object):
         self.cropped_width = rospy.get_param("cropped_width", 500)
         self.cropped_height = rospy.get_param("cropped_height", self.image_height)
         self.led_a = rospy.get_param("led_a", 1)
-        self.led_b = rospy.get_param("led_a", 1)
-        self.led_c = rospy.get_param("led_a", 0)
-        self.led_d = rospy.get_param("led_a", 0)
+        self.led_b = rospy.get_param("led_b", 1)
+        self.led_c = rospy.get_param("led_c", 0)
+        self.led_d = rospy.get_param("led_d", 0)
         self.n_leds = self.led_a + self.led_b + self.led_c + self.led_d
 
+        # LED Mapping Array
         self.led_array = []
         if self.led_a == 1:
             self.led_array.append(0)
@@ -60,14 +62,16 @@ class linear_controller(object):
 
     # Perform Least Squares Regression and Output new LED Values
     def update_leds(self, level):
-        b = level.data * np.ones([self.cropped_height * self.cropped_width, 1])
+        b = level.data * np.ones(self.cropped_height * self.cropped_width)
 
         # solve least squares
         if self.A_initialized:
-            sol = np.linalg.lstsq(self.A, b)
-            x = sol[0]
-            print(x)
-
+            old_sol = np.linalg.lstsq(self.A, b)
+            sol = optimize.lsq_linear(self.A, b, bounds=(0.0, 1.0 / self.pre_flash_value), verbose=2)
+            print("Least Squares Solution: ")
+            print(sol)
+            
+            x = sol.x
             # update led control
             self.control = np.array([0.0, 0.0, 0.0, 0.0])
             for i in range(len(x)):
@@ -78,10 +82,12 @@ class linear_controller(object):
             msg.data = self.control
             self.led_pub.publish(msg)
 
+    # Handle incoming led messages
     def led_cb(self, msg):
         self.current_state = np.array(msg.data)
         self.initialized = True
 
+    # Handle incoming images
     def image_cb(self, img):
         try:
             cv_image = self.bridge.imgmsg_to_cv2(img, "bgr8")
