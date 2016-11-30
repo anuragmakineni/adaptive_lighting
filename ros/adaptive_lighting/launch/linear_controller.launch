@@ -1,6 +1,8 @@
 <launch>
+<arg name="device" default="16369091"/>
+
 <node name="linear_controller" pkg="adaptive_lighting" type="linear_controller.py" ns="adaptive_lighting" output="screen">
-  <remap from="~image_raw" to="/pg_16369091/image_raw"/>
+  <remap from="~image_raw" to="/pg_$(arg device)/image_raw"/>
   <remap from="~pwm" to="light_driver/pwm"/>
   <param name="~pre_flash_value" value="0.1"/>
   <param name="~pre_flash_time" value="1.0"/>

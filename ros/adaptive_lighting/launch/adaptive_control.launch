@@ -1,11 +1,14 @@
 <launch>
-<node name="light_driver" pkg="adaptive_lighting" type="light_driver.py" ns="adaptive_lighting" output="screen"/>
+  <arg name="camera_name" value="16369091"/>
 
-<node name="linear_controller" pkg="adaptive_lighting" type="linear_controller.py" ns="adaptive_lighting" output="screen">
-  <remap from="~image_raw" to="/pg_16369091/image_raw"/>
-  <remap from="~pwm" to="light_driver/pwm"/>
-  <param name="~pre_flash_value" value="0.1"/>
-  <param name="~pre_flash_time" value="1.0"/>
-</node>
+  <include file="$(find adaptive_lighting)/launch/pwm_driver.launch"/>
+
+  <include file="$(find adaptive_lighting)/launch/linear_controller.launch">
+    <arg name="device" value="$(arg camera_name)"/>
+  </include>
+
+  <include file="$(find flea3)/launch/single_node.launch">
+    <arg name="device" value="$(arg camera_name)"/>
+  </include>
 
 </launch>
