@@ -1,0 +1,11 @@
+<launch>
+<node name="light_driver" pkg="adaptive_lighting" type="light_driver.py" ns="adaptive_lighting" output="screen"/>
+
+<node name="linear_controller" pkg="adaptive_lighting" type="linear_controller.py" ns="adaptive_lighting" output="screen">
+  <remap from="~image_raw" to="/pg_16369091/image_raw"/>
+  <remap from="~pwm" to="light_driver/pwm"/>
+  <param name="~pre_flash_value" value="0.1"/>
+  <param name="~pre_flash_time" value="1.0"/>
+</node>
+
+</launch>
