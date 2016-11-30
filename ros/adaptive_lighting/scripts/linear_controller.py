@@ -31,6 +31,7 @@ class linear_controller(object):
         self.led_c = rospy.get_param("led_c", 0)
         self.led_d = rospy.get_param("led_d", 0)
         self.n_leds = self.led_a + self.led_b + self.led_c + self.led_d
+        self.debug = rospy.get_param("debug", True)
 
         # LED Mapping Array
         self.led_array = []
@@ -66,11 +67,17 @@ class linear_controller(object):
 
         # solve least squares
         if self.A_initialized:
-            old_sol = np.linalg.lstsq(self.A, b)
-            sol = optimize.lsq_linear(self.A, b, bounds=(0.0, 1.0 / self.pre_flash_value), verbose=2)
-            print("Least Squares Solution: ")
-            print(sol)
-            
+            if self.debug:
+                ver = 2
+            else:
+                ver = 0
+
+            sol = optimize.lsq_linear(self.A, b, bounds=(0.0, 1.0 / self.pre_flash_value), verbose=ver)
+
+            if self.debug:
+                print("Least Squares Solution: ")
+                print(sol)
+
             x = sol.x
             # update led control
             self.control = np.array([0.0, 0.0, 0.0, 0.0])
