@@ -7,8 +7,4 @@
     <arg name="device" value="$(arg camera_name)"/>
   </include>
 
-  <include file="$(find flea3)/launch/single_node.launch">
-    <arg name="device" value="$(arg camera_name)"/>
-  </include>
-
 </launch>
