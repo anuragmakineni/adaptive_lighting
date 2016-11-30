@@ -23,18 +23,18 @@ class linear_controller(object):
         self.level_sub = rospy.Subscriber("~level", UInt8, self.update_leds)
 
         # ROS Parameters
-        self.pre_flash_value = rospy.get_param("pre_flash_value", 0.5)
-        self.pre_flash_time = rospy.get_param("pre_flash_time", 0.1)
-        self.image_width = rospy.get_param("image_width", 2048)
-        self.image_height = rospy.get_param("image_height", 1536)
-        self.cropped_width = rospy.get_param("cropped_width", 500)
-        self.cropped_height = rospy.get_param("cropped_height", self.image_height)
-        self.led_a = rospy.get_param("led_a", 1)
-        self.led_b = rospy.get_param("led_b", 1)
-        self.led_c = rospy.get_param("led_c", 0)
-        self.led_d = rospy.get_param("led_d", 0)
+        self.pre_flash_value = rospy.get_param("~pre_flash_value", 0.5)
+        self.pre_flash_time = rospy.get_param("~pre_flash_time", 0.1)
+        self.image_width = rospy.get_param("~image_width", 2048)
+        self.image_height = rospy.get_param("~image_height", 1536)
+        self.cropped_width = rospy.get_param("~cropped_width", 500)
+        self.cropped_height = rospy.get_param("~cropped_height", self.image_height)
+        self.led_a = rospy.get_param("~led_a", 1)
+        self.led_b = rospy.get_param("~led_b", 1)
+        self.led_c = rospy.get_param("~led_c", 0)
+        self.led_d = rospy.get_param("~led_d", 0)
         self.n_leds = self.led_a + self.led_b + self.led_c + self.led_d
-        self.debug = rospy.get_param("debug", True)
+        self.debug = rospy.get_param("~debug", True)
 
         # LED Mapping Array
         self.led_array = []
@@ -68,14 +68,14 @@ class linear_controller(object):
     def update_leds(self, level):
         b = level.data * np.ones(self.cropped_height * self.cropped_width)
 
-        # solve least squares
         if self.A_initialized:
             if self.debug:
                 ver = 2
             else:
                 ver = 0
 
-            sol = optimize.lsq_linear(self.A, b, bounds=(0.0, 1.0 / self.pre_flash_value), verbose=ver)
+            # solve least squares
+            sol = optimize.lsq_linear(self.A, b, bounds=(0.0, 1.0), verbose=ver)
 
             if self.debug:
                 print("Least Squares Solution: ")
@@ -147,6 +147,7 @@ class linear_controller(object):
         else:
             return TriggerResponse(False, "Empty A")
 
+    # automatically trigger led's and capture mask
     def capture_masks(self, srv):
         for i in range(self.n_leds):
             # activate one LED
@@ -160,6 +161,11 @@ class linear_controller(object):
 
             # wait for some time for frames to be captured
             time.sleep(self.pre_flash_time)
+
+            # turn off led's after capture
+            self.control = np.array([0.0, 0.0, 0.0, 0.0])
+            msg.data = self.control
+            self.led_pub.publish(msg)
 
         return self.calibrate(None)
 
