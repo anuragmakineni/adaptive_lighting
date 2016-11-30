@@ -8,6 +8,7 @@ from std_srvs.srv import Trigger, TriggerResponse
 from cv_bridge import CvBridge, CvBridgeError
 import numpy as np
 from scipy import optimize
+import time
 
 
 class linear_controller(object):
@@ -18,10 +19,12 @@ class linear_controller(object):
         self.led_sub = rospy.Subscriber("~pwm", Float64MultiArray, self.led_cb)
         self.led_pub = rospy.Publisher("~pwm", Float64MultiArray, queue_size=10)
         self.calibrate_srv = rospy.Service("~calibrate", Trigger, self.calibrate)
+        self.mask_capture_srv = rospy.Service("~capture", Trigger, self.capture_masks)
         self.level_sub = rospy.Subscriber("~level", UInt8, self.update_leds)
 
         # ROS Parameters
         self.pre_flash_value = rospy.get_param("pre_flash_value", 0.5)
+        self.pre_flash_time = rospy.get_param("pre_flash_time", 0.1)
         self.image_width = rospy.get_param("image_width", 2048)
         self.image_height = rospy.get_param("image_height", 1536)
         self.cropped_width = rospy.get_param("cropped_width", 500)
@@ -144,6 +147,21 @@ class linear_controller(object):
         else:
             return TriggerResponse(False, "Empty A")
 
+    def capture_masks(self, srv):
+        for i in range(self.n_leds):
+            # activate one LED
+            self.control = np.array([0.0, 0.0, 0.0, 0.0])
+            self.control[self.led_array[i]] = self.pre_flash_value
+
+            # publish control
+            msg = Float64MultiArray()
+            msg.data = self.control
+            self.led_pub.publish(msg)
+
+            # wait for some time for frames to be captured
+            time.sleep(self.pre_flash_time)
+
+        return self.calibrate(None)
 
 if __name__ == '__main__':
     rospy.init_node("linear_controller")

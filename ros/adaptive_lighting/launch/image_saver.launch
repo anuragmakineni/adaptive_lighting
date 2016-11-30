@@ -1,0 +1,5 @@
+<launch>
+<node name="image_saver" pkg="adaptive_lighting" type="image_saver.py" ns="adaptive_lighting" output="screen">
+  <remap from="~image_raw" to="/pg_16369091/image_raw"/>
+</node>
+</launch>
