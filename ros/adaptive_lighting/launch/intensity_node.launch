@@ -1,7 +1,7 @@
 <launch>
   <arg name="camera" default="color"/>
 
-  <node pkg="led" type="intensity_node.py" name="intensity_node" output="screen" ns="$(arg camera)">
+  <node pkg="adaptive_lighting" type="intensity_node.py" name="intensity_node" output="screen" ns="$(arg camera)">
     <remap from="image" to="/pg_16369091/image_raw"/>
   </node>
 
