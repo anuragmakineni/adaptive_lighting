@@ -70,13 +70,13 @@ class IntensityNode(object):
         image_horz_center = int(width / 2.0)
         image_vert_center = int(height / 2.0)
 
-        image = image[image_vert_center - int(self.cropped_height / 2.0):image_vert_center + int(
-            self.cropped_height / 2.0),
-            image_horz_center - int(self.cropped_width / 2.0):image_horz_center + int(self.cropped_width / 2.0)]
+        image = image[(image_vert_center - int(self.cropped_height / 2.0)):(image_vert_center + int(
+            self.cropped_height / 2.0)),
+                (image_horz_center - int(self.cropped_width / 2.0)):(image_horz_center + int(self.cropped_width / 2.0))]
 
         image = cv2.resize(image, None, fx=0.2, fy=0.2,
                            interpolation=cv2.INTER_NEAREST)
-        
+
         self.image = cv2.GaussianBlur(image, (5, 5), 0)
 
 
