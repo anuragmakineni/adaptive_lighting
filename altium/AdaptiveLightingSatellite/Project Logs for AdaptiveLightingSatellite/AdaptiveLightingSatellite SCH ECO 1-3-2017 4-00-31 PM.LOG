@@ -1,0 +1,6 @@
+Remove Pin=JP1-3 From Net=ENABLE
+Remove Pin=JP2-1 From Net=LED+
+Remove Pin=Q1-2 From Net=LED+
+Remove Pin=U1-4 From Net=ENABLE
+Remove Pin=U1-10 From Net=CTL
+Remove Pin=U2-8 From Net=CTL
