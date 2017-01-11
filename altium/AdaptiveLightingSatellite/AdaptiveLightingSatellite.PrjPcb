@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=Project Outputs for AdaptiveLightingSatellite
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
@@ -212,114 +212,62 @@ DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLigh
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for Free Documents\NC Drill\AdaptiveLightingSatellite.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument3]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument4]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument5]
+[GeneratedDocument3]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument6]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument7]
+[GeneratedDocument4]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBO
 DItemRevisionGUID=
 
-[GeneratedDocument8]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument9]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBP
 DItemRevisionGUID=
 
-[GeneratedDocument10]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GBP
-DItemRevisionGUID=
-
-[GeneratedDocument11]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument12]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument13]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GKO
 DItemRevisionGUID=
 
-[GeneratedDocument14]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GKO
-DItemRevisionGUID=
-
-[GeneratedDocument15]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument16]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument17]
+[GeneratedDocument9]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument18]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument19]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument20]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument21]
+[GeneratedDocument11]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument22]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument23]
+[GeneratedDocument12]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument24]
+[GeneratedDocument13]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.REP
 DItemRevisionGUID=
 
-[GeneratedDocument25]
+[GeneratedDocument14]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument26]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument27]
+[GeneratedDocument15]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument28]
-DocumentPath=Project Outputs for Free Documents\NC Drill\AdaptiveLightingSatellite.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument29]
+[GeneratedDocument16]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Design Rule Check - AdaptiveLightingSatellite.html
 DItemRevisionGUID=
 
@@ -333,7 +281,7 @@ OutputJobsCount=0
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 
 [Generic_EDE]
-OutputDir=Project Outputs for AdaptiveLightingSatellite
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
