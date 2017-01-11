@@ -300,34 +300,26 @@ DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLigh
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for Free Documents\NC Drill\AdaptiveLightingSatellite.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument25]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.REP
 DItemRevisionGUID=
 
-[GeneratedDocument26]
-DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.REP
-DItemRevisionGUID=
-
-[GeneratedDocument27]
+[GeneratedDocument25]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument28]
+[GeneratedDocument26]
 DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument29]
+[GeneratedDocument27]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument30]
+[GeneratedDocument28]
 DocumentPath=Project Outputs for Free Documents\NC Drill\AdaptiveLightingSatellite.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument31]
+[GeneratedDocument29]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Design Rule Check - AdaptiveLightingSatellite.html
 DItemRevisionGUID=
 
