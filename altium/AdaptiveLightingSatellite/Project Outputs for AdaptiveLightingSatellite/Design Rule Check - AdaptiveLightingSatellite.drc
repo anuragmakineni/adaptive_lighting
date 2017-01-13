@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\anurag\Documents\GitHub\adaptive_lighting\altium\AdaptiveLightingSatellite\AdaptiveLightingSatellite.PcbDoc
-Date     : 1/12/2017
-Time     : 12:38:22 AM
+Date     : 1/13/2017
+Time     : 1:35:03 PM
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
 Rule Violations :0
@@ -138,4 +138,4 @@ Rule Violations :0
 
 
 Violations Detected : 94
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:03

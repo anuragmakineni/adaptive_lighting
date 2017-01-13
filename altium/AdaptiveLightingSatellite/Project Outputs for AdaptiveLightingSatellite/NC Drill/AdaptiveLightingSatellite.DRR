@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: AdaptiveLightingSatellite.PcbDoc   1/13/2017  11:40:38 AM
+NCDrill File Report For: AdaptiveLightingSatellite.PcbDoc   1/13/2017  1:38:19 PM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,7 +7,7 @@ ASCII RoundHoles File : AdaptiveLightingSatellite.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      10mil (0.254mm)                                           Round             114       PTH        7.97inch (202.51mm)
+T1      10mil (0.254mm)                                           Round             114       PTH        7.92inch (201.06mm)
 T2      32mil (0.8mm)                                             Round             7         PTH        1.03inch (26.04mm)
 T3      120mil (3.048mm)                                          Round             2         PTH        1.27inch (32.27mm)
 ----------------------------------------------------------------------------------------------------------------------------------
