@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=VUSB Pin=U1-29
+Change Component Footprint: Designator=R1 Old Footprint=R0402[1005] New Footprint=R0402[1005]
+Change Component Footprint: Designator=R2 Old Footprint=R0402[1005] New Footprint=R0402[1005]
+Change Component Footprint: Designator=R3 Old Footprint=R0402[1005] New Footprint=R0402[1005]
+Change Component Footprint: Designator=R4 Old Footprint=R0402[1005] New Footprint=R0402[1005]
+Change Component Footprint: Designator=R5 Old Footprint=R0402[1005] New Footprint=R0402[1005]
+Change Component Footprint: Designator=R6 Old Footprint=R0402[1005] New Footprint=R0402[1005]
+Change Component Footprint: Designator=R7 Old Footprint=R0402[1005] New Footprint=R0402[1005]

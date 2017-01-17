@@ -1,0 +1,10 @@
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [AdaptiveLightingHub.PrjPcb]
+   Generated File[Bill of Materials-AdaptiveLightingHub.xls]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 7:29:44 PM On 1/16/2017
