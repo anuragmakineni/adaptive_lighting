@@ -1,10 +1,10 @@
-Output: Bill of Materials
-Type  : BOM
-From  : Variant [[No Variations]] of Project [AdaptiveLightingSatellite.PrjPcb]
-   Generated File[Bill of Materials-AdaptiveLightingSatellite.xls]
+Output: Export STEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [AdaptiveLightingSatellite.PcbDoc]
+   Generated File[AdaptiveLightingSatellite.step]
 
 
 Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 1:38:20 PM On 1/13/2017
+Finished Output Generation At 3:26:45 PM On 1/20/2017
