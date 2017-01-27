@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: AdaptiveLightingHub.PcbDoc   1/16/2017  7:29:44 PM
+NCDrill File Report For: AdaptiveLightingHub.PcbDoc   1/27/2017  11:28:36 AM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,10 +7,11 @@ ASCII RoundHoles File : AdaptiveLightingHub.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      10mil (0.254mm)                                           Round             232       PTH        11.63inch (295.40mm)
+T1      10mil (0.254mm)                                           Round             148       PTH        8.47inch (215.08mm)
 T2      32mil (0.8mm)                                             Round             45        PTH        4.86inch (123.41mm)
-T3      130mil (3.299mm)                                          Round             2         PTH        1.84inch (46.67mm)
+T3      102mil (2.591mm)                                          Round             2         PTH        0.26inch (6.50mm)
+T4      130mil (3.299mm)                                          Round             2         PTH        1.79inch (45.50mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              279
+Totals                                                                              197
 
 Total Processing Time (hh:mm:ss) : 00:00:00
