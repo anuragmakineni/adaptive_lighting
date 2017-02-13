@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for AdaptiveLightingSatellite
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
@@ -208,66 +208,134 @@ GenerateClassCluster=0
 DocumentUniqueId=XHQEGMEN
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.DRR
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite2.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.EXTREP
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBL
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBO
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBP
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBS
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GKO
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTL
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTO
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTP
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTS
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.LDP
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite2.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.REP
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.REP
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.RUL
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite2.RUL
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.TXT
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite2.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument16]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.REP
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\BOM\Bill of Materials-AdaptiveLightingSatellite.xls
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Design Rule Check - AdaptiveLightingSatellite2.html
+DItemRevisionGUID=
+
+[GeneratedDocument33]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Design Rule Check - AdaptiveLightingSatellite.html
 DItemRevisionGUID=
 
@@ -281,7 +349,7 @@ OutputJobsCount=0
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for AdaptiveLightingSatellite
 
 [OutputGroup1]
 Name=Netlist Outputs
