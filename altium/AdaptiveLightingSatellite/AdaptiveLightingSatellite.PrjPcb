@@ -38,6 +38,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=C:\Users\anurag\AppData\Local\Temp\vmware-anurag\VMwareDnD\1daf3f6c\LED.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document2]
 DocumentPath=Footprints.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -54,7 +71,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JSSYYRYA
 
-[Document2]
+[Document3]
 DocumentPath=AdaptiveLightingSatellite.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -71,25 +88,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OCEMFMXE
 
-[Document3]
-DocumentPath=..\..\..\..\..\AppData\Local\Temp\vmware-anurag\VMwareDnD\750bc9d8\LED.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
 [Document4]
-DocumentPath=Z:\Downloads\altium-libraries\Capacitors\Project Outputs for Capacitors\Capacitors.IntLib
+DocumentPath=..\..\..\..\Downloads\altium-libraries\Capacitors\Project Outputs for Capacitors\Capacitors.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -106,7 +106,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document5]
-DocumentPath=Z:\Downloads\altium-libraries\Connectors\Project Outputs for Connectors\Connectors.IntLib
+DocumentPath=..\..\..\..\Downloads\altium-libraries\Connectors\Project Outputs for Connectors\Connectors.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -123,7 +123,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document6]
-DocumentPath=Z:\Downloads\altium-libraries\ICs\Project Outputs for ICs\ICs.IntLib
+DocumentPath=..\..\..\..\Downloads\altium-libraries\ICs\Project Outputs for ICs\ICs.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -140,7 +140,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document7]
-DocumentPath=Z:\Downloads\altium-libraries\Inductors\Project Outputs for Inductors\Inductors.IntLib
+DocumentPath=..\..\..\..\Downloads\altium-libraries\Inductors\Project Outputs for Inductors\Inductors.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -157,7 +157,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document8]
-DocumentPath=Z:\Downloads\altium-libraries\MOSFETs\Project Outputs for MOSFETs\MOSFETs.IntLib
+DocumentPath=..\..\..\..\Downloads\altium-libraries\MOSFETs\Project Outputs for MOSFETs\MOSFETs.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -174,7 +174,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document9]
-DocumentPath=Z:\Downloads\altium-libraries\Resistors\Project Outputs for Resistors\Resistors.IntLib
+DocumentPath=..\..\..\..\Downloads\altium-libraries\Resistors\Project Outputs for Resistors\Resistors.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -191,7 +191,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document10]
-DocumentPath=AdaptiveLightingSatellite2.PcbDoc
+DocumentPath=AdaptiveLightingSatellite.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -272,70 +272,130 @@ DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLigh
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.EXTREP
+DocumentPath=Project Outputs for Free Documents\NC Drill\AdaptiveLightingSatellite.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBL
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBO
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBP
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBS
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GKO
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTL
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTO
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTP
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTS
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.LDP
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.REP
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.RUL
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.TXT
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument31]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\BOM\Bill of Materials-AdaptiveLightingSatellite.xls
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument32]
-DocumentPath=Project Outputs for AdaptiveLightingSatellite\Design Rule Check - AdaptiveLightingSatellite2.html
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument33]
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=Project Outputs for Free Documents\NC Drill\AdaptiveLightingSatellite.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.REP
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.REP
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Gerber\AdaptiveLightingSatellite.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument43]
+DocumentPath=Project Outputs for Free Documents\Gerber\AdaptiveLightingSatellite.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument44]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\NC Drill\AdaptiveLightingSatellite.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument45]
+DocumentPath=Project Outputs for Free Documents\NC Drill\AdaptiveLightingSatellite.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument46]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\BOM\Bill of Materials-AdaptiveLightingSatellite.xls
+DItemRevisionGUID=
+
+[GeneratedDocument47]
+DocumentPath=Project Outputs for AdaptiveLightingSatellite\Design Rule Check - AdaptiveLightingSatellite2.html
+DItemRevisionGUID=
+
+[GeneratedDocument48]
 DocumentPath=Project Outputs for AdaptiveLightingSatellite\Design Rule Check - AdaptiveLightingSatellite.html
 DItemRevisionGUID=
 

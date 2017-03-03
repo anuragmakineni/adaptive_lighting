@@ -1,10 +1,12 @@
-Output: Bill of Materials
-Type  : BOM
-From  : Variant [[No Variations]] of Project [AdaptiveLightingSatellite.PrjPcb]
-   Generated File[Bill of Materials-AdaptiveLightingSatellite.xls]
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [AdaptiveLightingSatellite.PcbDoc]
+   Generated File[AdaptiveLightingSatellite.TXT]
+   Generated File[AdaptiveLightingSatellite.LDP]
+   Generated File[AdaptiveLightingSatellite.DRR]
 
 
-Files Generated   : 1
+Files Generated   : 3
 Documents Printed : 0
 
-Finished Output Generation At 3:00:30 PM On 2/13/2017
+Finished Output Generation At 3:08:47 AM On 3/15/2017
