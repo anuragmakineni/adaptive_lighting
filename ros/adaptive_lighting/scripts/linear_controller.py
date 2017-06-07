@@ -169,6 +169,7 @@ class linear_controller(object):
 
         return self.calibrate(None)
 
+
 if __name__ == '__main__':
     rospy.init_node("linear_controller")
     node = linear_controller()
